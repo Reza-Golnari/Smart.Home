@@ -1,8 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 * { margin: 0; padding: 0; font-family: "Roboto", sans-serif; }
 
-body { min-height: 100vh; background-color: #191919; }
+body { min-height: 100vh; background-color: #191919; font-size: 16px; }
 
 body .container { width: 100%; min-height: 100vh; }
+
+a { text-decoration: none; }
+
+header .navbar { position: relative; display: flex; align-items: center; justify-content: space-between; padding: 20px 55px; }
+
+header .navbar-item:nth-child(1) h1 a { color: #e39017; letter-spacing: 1px; display: flex; align-items: center; justify-content: center; }
+
+header .navbar-item:nth-child(1) h1 a span { color: #ffffff; }
+
+header .navbar-item:nth-child(1) h1 a ion-icon { font-size: 1.2em; }
+
+header .navbar-item:nth-child(2) .nav-center { display: flex; align-items: center; justify-content: center; list-style: none; }
+
+header .navbar-item:nth-child(2) .nav-center-item { margin: 0 20px; }
+
+header .navbar-item:nth-child(2) .nav-center-link { padding: 5px 10px; font-size: 0.8em; color: rgba(255, 255, 255, 0.8); transition: all 0.2s; }
+
+header .navbar-item:nth-child(2) .nav-center-link:hover { color: white; text-decoration: underline; }
 /*# sourceMappingURL=main.css.map */

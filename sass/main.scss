@@ -1,1 +1,46 @@
 @import "base";
+
+header {
+  .navbar {
+    position: relative;
+    @include flex(space-between);
+    padding: 20px 55px;
+    &-item:nth-child(1) {
+      h1 {
+        a {
+          color: $color-secondary;
+          letter-spacing: 1px;
+          @include flex;
+
+          span {
+            color: $color-white;
+          }
+          ion-icon {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+    &-item:nth-child(2) {
+      .nav-center {
+        @include flex;
+        list-style: none;
+
+        &-item {
+          margin: 0 20px;
+        }
+        &-link {
+          padding: 5px 10px;
+          font-size: 0.8em;
+          color: transparentize($color-white, 0.2);
+          transition: all 0.2s;
+
+          &:hover {
+            color: transparentize($color-white, 0);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
