@@ -9,6 +9,8 @@ a { text-decoration: none; }
 
 header .navbar { position: relative; display: flex; align-items: center; justify-content: space-between; padding: 20px 55px; }
 
+@media (max-width: 550px) { header .navbar { padding: 20px 25px; } }
+
 header .navbar-item:nth-child(1) h1 a { color: #e39017; letter-spacing: 1px; display: flex; align-items: center; justify-content: center; }
 
 header .navbar-item:nth-child(1) h1 a span { color: #ffffff; }
@@ -16,6 +18,8 @@ header .navbar-item:nth-child(1) h1 a span { color: #ffffff; }
 header .navbar-item:nth-child(1) h1 a ion-icon { font-size: 1.2em; }
 
 header .navbar-item:nth-child(2) .nav-center { display: flex; align-items: center; justify-content: center; list-style: none; }
+
+@media (max-width: 600px) { header .navbar-item:nth-child(2) .nav-center { display: none; } }
 
 header .navbar-item:nth-child(2) .nav-center-item { margin: 0 20px; }
 
@@ -35,6 +39,8 @@ header .navbar-item:last-child input:checked ~ div.menu-left { left: 0vw; }
 
 header .navbar-item:last-child .manu-icon { position: absolute; top: 20px; right: 55px; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; }
 
+@media (max-width: 550px) { header .navbar-item:last-child .manu-icon { right: 25px; } }
+
 header .navbar-item:last-child .manu-icon label { position: relative; width: 30px; height: 30px; border-radius: 50%; border: 2px solid #e39017; background-color: rgba(255, 255, 255, 0.8); display: flex; align-items: center; justify-content: center; flex-direction: column; }
 
 header .navbar-item:last-child .manu-icon label span { position: absolute; height: 2px; background-color: #e39017; transition: all 0.4s; }
@@ -47,6 +53,8 @@ header .navbar-item:last-child .manu-icon label span:nth-child(3) { width: 50%; 
 
 header .navbar-item:last-child .menu-left { position: fixed; top: 0; left: -45vw; width: 35vw; height: 100vh; padding: 100px 10px; z-index: 10000000; background-color: #262626; border-right: 1px dotted #e39017; text-align: center; transition: all 0.8s; }
 
+@media (max-width: 550px) { header .navbar-item:last-child .menu-left { width: 45vw; left: -55vw; } }
+
 header .navbar-item:last-child .menu-left .navbar-item { display: flex; align-items: center; justify-content: center; }
 
 header .navbar-item:last-child .menu-left .navbar-item h1 a { font-size: 1.5em; }
@@ -56,6 +64,8 @@ header .navbar-item:last-child .menu-left .navbar-left { display: flex; align-it
 header .navbar-item:last-child .menu-left .navbar-left-item { width: 80%; display: flex; align-items: center; justify-content: center; list-style: none; margin: 30px 0; }
 
 header .navbar-item:last-child .menu-left .navbar-left-item:nth-last-child(1), header .navbar-item:last-child .menu-left .navbar-left-item:nth-last-child(2), header .navbar-item:last-child .menu-left .navbar-left-item:nth-last-child(3) { display: none; }
+
+@media (max-width: 600px) { header .navbar-item:last-child .menu-left .navbar-left-item:nth-last-child(1), header .navbar-item:last-child .menu-left .navbar-left-item:nth-last-child(2), header .navbar-item:last-child .menu-left .navbar-left-item:nth-last-child(3) { display: flex; } }
 
 header .navbar-item:last-child .menu-left .navbar-left-link { display: block; width: 80%; padding: 10px 20px; border: 1px dashed aliceblue; color: #e39017; border-radius: 5px; transition: all 0.2s; }
 

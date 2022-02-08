@@ -3,9 +3,12 @@
 header {
   .navbar {
     position: relative;
-
     @include flex(space-between);
     padding: 20px 55px;
+    @media (max-width: 550px) {
+      padding: 20px 25px;
+    }
+
     &-item:nth-child(1) {
       h1 {
         a {
@@ -26,7 +29,9 @@ header {
       .nav-center {
         @include flex;
         list-style: none;
-
+        @media (max-width: 600px) {
+          display: none;
+        }
         &-item {
           margin: 0 20px;
         }
@@ -76,7 +81,9 @@ header {
         width: 30px;
         height: 30px;
         @include flex;
-
+        @media (max-width: 550px) {
+          right: 25px;
+        }
         label {
           position: relative;
           width: 30px;
@@ -120,6 +127,10 @@ header {
         border-right: 1px dotted $color-secondary;
         text-align: center;
         transition: all 0.8s;
+        @media (max-width: 550px) {
+          width: 45vw;
+          left: -55vw;
+        }
         .navbar-item {
           @include flex;
           h1 {
@@ -143,6 +154,9 @@ header {
             &:nth-last-child(2),
             &:nth-last-child(3) {
               display: none;
+              @media (max-width: 600px) {
+                display: flex;
+              }
             }
           }
           &-link {
