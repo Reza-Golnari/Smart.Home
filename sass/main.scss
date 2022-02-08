@@ -12,6 +12,7 @@ header {
     &-item:nth-child(1) {
       h1 {
         a {
+          font-size: 1.2em;
           color: $color-secondary;
           letter-spacing: 1px;
           @include flex;
