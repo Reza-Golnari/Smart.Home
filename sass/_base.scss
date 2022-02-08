@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-$color-primari: #191919;
+$color-primary: #191919;
 $color-secondary: #e39017;
 $color-white: #ffffff;
 
@@ -20,7 +20,7 @@ $font-Roboto: "Roboto", sans-serif;
 
 body {
   min-height: 100vh;
-  background-color: $color-primari;
+  background-color: $color-primary;
   font-size: 16px;
 
   .container {
