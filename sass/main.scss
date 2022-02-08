@@ -189,6 +189,12 @@ header {
   main {
     width: 45%;
     padding: 50px 20px;
+    @media (max-width: 600px) {
+      width: 80%;
+      margin: 0 auto;
+      @include flex;
+      flex-direction: column;
+    }
     .after {
       position: absolute;
       top: 10%;
@@ -199,6 +205,9 @@ header {
         height: 1px;
         background-color: $color-white;
         margin-right: 5px;
+        @media (max-width: 600px) {
+          width: 150px;
+        }
       }
       a {
         color: $color-secondary;
@@ -220,6 +229,10 @@ header {
     article {
       padding: 50px 0;
       padding-left: 15%;
+      @media (max-width: 600px) {
+        @include flex;
+        flex-direction: column;
+      }
       h1 {
         color: darken($color-white, $amount: 10);
         font-size: 3em;
@@ -230,6 +243,26 @@ header {
       p {
         color: darken($color-white, 20);
       }
+      button {
+        all: unset;
+        margin-top: 20px;
+        padding: 10px 15px;
+        border: 1px solid $color-secondary;
+        color: $color-secondary;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        @media (max-width: 600px) {
+          padding: 10px 55px;
+        }
+
+        &:hover {
+          border: 1px solid $color-primary;
+          color: $color-primary;
+          background-color: $color-secondary;
+        }
+      }
     }
   }
   aside {
@@ -237,34 +270,51 @@ header {
     margin-top: 30px;
     width: 55%;
     height: 60vh;
+    @media (max-width: 600px) {
+      display: none;
+    }
     span {
+      @include flex;
       position: absolute;
       border-radius: 200px;
       overflow: hidden;
       border: 2px solid $color-secondary;
       &:first-child {
         top: 15%;
-        right: 20%;
+        right: 15%;
         z-index: 2;
+        @media (max-width: 840px) {
+          top: 12%;
+          right: 10%;
+          width: 100px;
+          height: 200px;
+        }
       }
       &:nth-child(2) {
-        right: 35%;
+        right: 30%;
         top: 0;
+        @media (max-width: 840px) {
+          width: 150px;
+          height: 400px;
+        }
       }
       &:nth-child(3) {
         top: 45%;
-        right: 60%;
+        right: 55%;
+        @media (max-width: 840px) {
+          right: 58%;
+          top: 35%;
+          width: 100px;
+          height: 200px;
+        }
       }
-    }
-    h2:nth-of-type(1) {
-      position: absolute;
-      right: 59%;
-      top: 26%;
-      font-size: 1.2em;
-      color: darken($color-white, $amount: 25);
-      font-weight: 100;
-      letter-spacing: 1px;
-      transform: rotate(-90deg);
+      &:last-child {
+        @include flex;
+        @media (max-width: 1000px) {
+          width: 90px;
+          height: 90px;
+        }
+      }
     }
   }
 }
