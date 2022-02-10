@@ -127,7 +127,7 @@ header {
         background-color: lighten($color-primary, 5);
         border-right: 1px dotted $color-secondary;
         text-align: center;
-        transition: all 0.8s;
+        transition: all 0.5s;
         transition-timing-function: linear;
         @media (max-width: 550px) {
           width: 45vw;
@@ -239,6 +239,9 @@ header {
         span {
           color: $color-secondary;
         }
+        @media (max-width: 430px) {
+          font-size: 2em;
+        }
       }
       p {
         color: darken($color-white, 20);
@@ -329,8 +332,24 @@ footer {
       display: grid;
       grid-template-columns: repeat(4, 25%);
       list-style: none;
+      @media (max-width: 895px) {
+        width: 95%;
+      }
+      @media (max-width: 850px) {
+        width: 100%;
+      }
+      @media (max-width: 710px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 360px) {
+        grid-template-columns: 1fr;
+        width: 90%;
+      }
       &-item {
         margin: 10px 20px;
+        @media (max-width: 360px) {
+          margin: 20px;
+        }
       }
       &-link {
         @include flex;
@@ -341,14 +360,35 @@ footer {
         border-left: none;
         border-bottom: none;
         border-radius: 25px;
-
+        @media (max-width: 750px) {
+          padding: 30px 5px;
+        }
+        @media (max-width: 710px) {
+          padding: 50px 10px;
+        }
+        @media (max-width: 430px) {
+          border-width: 1px;
+          padding: 30px 10px;
+        }
+        @media (max-width: 360px) {
+          padding: 10px 5px;
+        }
         ion-icon {
           font-size: 2em;
           margin-bottom: 10px;
           color: darken($color-white, $amount: 25);
+          @media (max-width: 430px) {
+            font-size: 1.5em;
+          }
         }
         p {
           letter-spacing: 1px;
+          @media (max-width: 850px) {
+            letter-spacing: 0px;
+          }
+          @media (max-width: 430px) {
+            font-size: 0.9em;
+          }
         }
       }
     }
