@@ -130,4 +130,18 @@ header .navbar-item:last-child .menu-left .navbar-left-link:hover { transform: t
 .contents aside span:last-child { display: flex; align-items: center; justify-content: center; }
 
 @media (max-width: 1000px) { .contents aside span:last-child { width: 90px; height: 90px; } }
+
+footer { margin-top: 20px; }
+
+footer .navbar-footer { padding: 10px; }
+
+footer .navbar-footer .nav { width: 90%; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 25%); list-style: none; }
+
+footer .navbar-footer .nav-item { margin: 10px 20px; }
+
+footer .navbar-footer .nav-link { display: flex; align-items: center; justify-content: center; flex-direction: column; color: #e39017; padding: 50px 10px; border: 2px solid #e39017; border-left: none; border-bottom: none; border-radius: 25px; }
+
+footer .navbar-footer .nav-link ion-icon { font-size: 2em; margin-bottom: 10px; color: #bfbfbf; }
+
+footer .navbar-footer .nav-link p { letter-spacing: 1px; }
 /*# sourceMappingURL=main.css.map */

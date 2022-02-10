@@ -318,3 +318,39 @@ header {
     }
   }
 }
+
+footer {
+  margin-top: 20px;
+  .navbar-footer {
+    padding: 10px;
+    .nav {
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      list-style: none;
+      &-item {
+        margin: 10px 20px;
+      }
+      &-link {
+        @include flex;
+        flex-direction: column;
+        color: $color-secondary;
+        padding: 50px 10px;
+        border: 2px solid $color-secondary;
+        border-left: none;
+        border-bottom: none;
+        border-radius: 25px;
+
+        ion-icon {
+          font-size: 2em;
+          margin-bottom: 10px;
+          color: darken($color-white, $amount: 25);
+        }
+        p {
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
